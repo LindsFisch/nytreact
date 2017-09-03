@@ -16,12 +16,5 @@
   "bugs": {
     "url": "https://github.com/LindsFisch/nytreact/issues"
   },
-  "homepage": "https://github.com/LindsFisch/nytreact#readme",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "mongoose": "^4.11.9",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  }
+  "homepage": "https://github.com/LindsFisch/nytreact#readme"
 }
