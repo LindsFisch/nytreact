@@ -17,10 +17,6 @@ var ArticleSchema = new Schema ({
     date: {
         type: Date, 
         required: true
-    },
-    saved: {
-        type: Boolean,
-        default: 0
     }
 });
 

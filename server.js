@@ -26,6 +26,51 @@ app.set("view engine", "handlebars");
 //start app
 var port = process.env.PORT || 3000;
 
+//set up express routes
+app.get("/", function(req, res){
+    res.sendFile("./public/index.html");
+});
+
+//get any saved in db
+app.get("/api/saved", function(req, res){
+    Article.find({}, function(error, doc){
+        if (error) {
+            console.log(error);
+        } else {
+            res.send(doc);
+        }
+    })
+});
+
+//add to saved in db
+app.post("/api/saved", function(req, res){
+    var newArticle = new Article ({
+        title: req.body.title,
+        link: req.body.link,
+        date: req.body.date
+    });
+
+    newArticle.save(function(error, doc){
+        if (error) {
+            console.log(error);
+        } else {
+            res.json(doc);
+        }
+    })
+});
+
+//remove article from saved
+app.delete("/api/saved/:id", function(req, res){
+    Article.findByIdAndRemove(req.params.id, function(error, doc){
+        if (error) {
+            console.log(error);
+        } else {
+            res.send(doc);
+        }
+    })
+});
+
+
 app.listen(port, function()
 {
   console.log('Running on port: ' + port);
