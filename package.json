@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/LindsFisch/nytreact/issues"
   },
-  "homepage": "https://github.com/LindsFisch/nytreact#readme"
+  "homepage": "https://github.com/LindsFisch/nytreact#readme",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.13.1"
+  }
 }
