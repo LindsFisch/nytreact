@@ -11,9 +11,10 @@ var Search = React.createClass({
         return (
 
             <div className="container">
+                <p>hjeiojei</p>
 
 
-                {this.props.children}
+                {/* {this.props.children} */}
 
             </div>
         );

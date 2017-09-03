@@ -10,22 +10,14 @@ var Saved = React.createClass({
 
     return (
 
-      <div className="container">
-        <div className="jumbotron">
-          <h2><strong>New York Times Search</strong></h2>
-          <hr />
-          <p>
-            Search, View, and Save articles!
-          </p>
-        </div>
 
         <div className="container">
+            <p>jfidjsifodji</p>
 
-          {this.props.children}
+          {/* {this.props.children} */}
 
         </div>
 
-      </div>
     );
   }
 });
