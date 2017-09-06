@@ -7,6 +7,15 @@ var helpers = require("./utils/helper");
 
 var Search = React.createClass({
 
+    getInitialState: function() {
+        return {
+            search: "",
+            start: "", 
+            end: "",
+            results: {}
+        }
+    },
+
     // Here we render the function
     render: function () {
 

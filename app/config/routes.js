@@ -13,8 +13,7 @@ var IndexRoute = router.IndexRoute;
 var Main = require("../components/Main");
 var Search = require("../components/children/Search");
 var Saved = require("../components/children/Saved");
-var Query = require("../components/children/grandchildren/Query");
-var Result = require("../components/children/grandchildren/Result");
+
 
 module.exports = (
     <Router history={hashHistory}>
