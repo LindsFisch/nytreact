@@ -3,6 +3,8 @@ var React = require("react");
 // Including the Link component from React Router to navigate within our application without full page reloads
 var Link = require("react-router").Link;
 
+var helpers = require("./utils/helper");
+
 var Saved = React.createClass({
 
   // Here we render the function

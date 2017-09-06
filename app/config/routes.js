@@ -22,12 +22,6 @@ module.exports = (
         <Route path = "/" component = {Main}>
 
             <Route path="Search" component={Search}>
-                <Route path="Query" component={Query}/>
-                <Route path="Result" component={Result}/>
-
-                <IndexRoute component={Query}/>
-
-            </Route>
 
             <Route path="Saved" component={Saved}/>
 
