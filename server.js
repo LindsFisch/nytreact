@@ -18,9 +18,9 @@ app.use(bodyParser.text());
 app.use(express.static("public"));
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-//set up handlebars
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// //set up handlebars
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
 
 //start app
